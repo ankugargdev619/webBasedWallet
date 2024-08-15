@@ -1,0 +1,86 @@
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #CDF5FD;
+    position: sticky;
+    top: 0;
+}
+
+.wallet-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 10vw;
+    background: #CDF5FD;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+        ;
+    max-height: 90vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.wallet-container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.wallet-container::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+}
+
+.header{
+    padding: 10px 0px;
+    font-size: 3em;
+}
+
+.create-wallet-btn{
+    padding: 10px;
+}
+
+.create-wallet-btn {
+    padding: 10px 20px;
+    background-color : #00A9FF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.wallet-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    background-color: white;
+    width: 100%;
+    padding: 2vw 5vw;
+    gap : 20px;
+    border-bottom: 1px solid black;
+}
+
+.copy-button, .delete-btn{
+    padding: 5px 10px;
+    background-color : #00A9FF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
